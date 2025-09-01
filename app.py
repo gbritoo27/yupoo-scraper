@@ -37,7 +37,7 @@ def clean_images(images):
     cleaned = []
     seen = set()
     for img in images:
-        if "logo/YupooDemo" in img:
+        if "logo" or "police" in img:
             continue
         if not any(img.lower().endswith(ext) for ext in [".jpg", ".jpeg", ".png"]):
             continue
